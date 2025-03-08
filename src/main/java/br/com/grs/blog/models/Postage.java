@@ -19,6 +19,9 @@ public class Postage {
     private UUID id;
 
     private String title;
+
+    @Lob
+    @Column(columnDefinition = "LONGTEXT")
     private String content;
     private String author;
 
